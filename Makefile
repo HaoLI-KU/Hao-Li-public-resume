@@ -67,7 +67,6 @@ tex:
 		exit 1; \
 	fi
 	@cd "$(PRIVATE)/CV_EN" && latexmk -pdf -interaction=nonstopmode -halt-on-error CV_HaoLi_EN.tex
-	@cp "$(PRIVATE)/CV_HaoLi_EN.pdf" "$(PDF_SRC)"
 	@cp "$(PRIVATE)/CV_HaoLi_EN.pdf" "$(PDF_DEST)"
 	@echo "✓ LaTeX compiled and PDF synced"
 
